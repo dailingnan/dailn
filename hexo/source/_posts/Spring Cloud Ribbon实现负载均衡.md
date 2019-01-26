@@ -5,6 +5,7 @@ categories: "Spring Cloud教程"
 tags: [微服务,Spring Cloud]
 ---
 <Excerpt in index | 首页摘要> 
+
 # Spring Cloud Ribbon实现负载均衡
 
 
@@ -14,6 +15,7 @@ tags: [微服务,Spring Cloud]
 负载均衡在系统架构中是一个非常重要的角色，在前面大型网站架构学习总结中，可以看到，高可用，伸缩性，性能几个架构要素中，负载均衡都有着很重要的地位，是系统压力缓解，系统扩容的重要手段之一。
 <!-- more -->
 <The rest of contents | 余下全文>
+
 ### 服务端负载
 
 一般来说，我们讲的负载均衡都是讲服务端负载均衡（不论硬负载还是软负载），比较常见的通过Nginx反向代理来实现负载均衡，例如下面图中所示
@@ -184,3 +186,7 @@ public class HelloController {
 # 总结
 
 Eureka 整合Ribbon后，通过RestTemplate以服务名访问的方式调用就能实现负载均衡，我们不需要关注各应用的ip、端口，这些信息Ribbon都能从Eureka Server的服务列表获取到，在此基础上，实现Ribbon还是挺方便的。
+
+参考书籍《Redis 实战》
+
+参考文章 [Redis 基础数据结构](https://juejin.im/book/5afc2e5f6fb9a07a9b362527/section/5afc2e5f51882542714ff291)
